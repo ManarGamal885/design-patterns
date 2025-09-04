@@ -1,0 +1,9 @@
+Design Principles:
+1. Identify tha aspects of your application that vary and separate them from what stays the same.
+2. Program to an interface, not an implementation. (which means depend on abstractions)
+3. Favor composition over inheritance.(use delegation to achieve code reuse and flexibility)
+---------------------------------------------------------------------------------------------------
+Strategy Pattern:
+The Strategy Pattern is a behavioral design pattern that enables selecting an algorithm's behavior at runtime.
+It defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+This allows the algorithm to vary independently from clients that use it.
