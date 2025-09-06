@@ -1,0 +1,18 @@
+Aspect                 Inheritance                            Composition
+Relationship             "IS-A"                                 "HAS-A"
+Coupling         Tight(strongly connected)               Loose(weakly connected)
+Flexibility      Hard to change at runtime               Easy to change at runtime
+Code Reuse         Through parent class                    Through contained objects
+When parent changes  Child automatically changes             Child not affected
+
+---------------------------------------------------------------------------------------------------
+Delegation means "asking someone else to do the work for you" instead of doing it yourself.
+---------------------------------------------------------------------------------------------------
+Key Differences:
+Feature                Interface                    Abstract Class
+Methods            Only abstract (until Java 8)    Both abstract and concrete
+Variables          Only public static final        Any type of variables
+Constructor           Cannot have                        Can have
+Multiple          Class can implement many         Class can extend only one
+Purpose            Define contract/capability         Share common code
+---------------------------------------------------------------------------------------------------
