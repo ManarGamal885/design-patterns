@@ -1,0 +1,26 @@
+Problem Statement:
+encapsulate the object creation logic
+
+Design Principles:
+1. Depend on abstractions, not on concretions.
+
+---------------------------------------------------------------------------------------------------
+Factory Method Pattern: defined an interface for creating an object, but let subclasses decide which class to instantiate.
+Factory Method lets a class defer instantiation to subclasses.
+---------------------------------------------------------------------------------------------------
+Factory Class: A class that is responsible for creating instances of other classes.
+the concept of factory class is used in the code as the SimpleFactory class so it is responsible for creating instances of different types of objects based on the input provided.
+Factory Method: A method that is responsible for creating and returning instances of a specific type.
+the createPizza is a factory method that creates and returns instances of different types of Pizza based on the input provided.
+Concrete Creator: A subclass that implements the factory method to create instances of a specific type.
+Concrete Class: A class that implements the interface defined by the factory method. like NYCheesePizza.
+----------------------------------------NOTE-------------------------------------------
+Pizza Class is the product class
+PizzaStore Class is the creator class
+SimpleFactory Class is the factory class
+High level components should not depend on low level components. Both should depend on abstractions.
+High level components: PizzaStore (the creator class that uses the factory to get pizza objects)
+Low level components: Concrete pizza classes like NYCheesePizza (specific implementations)
+Abstractions: The Pizza interface or abstract class, and possibly the factory interface
+PizzaStore should depend on the Pizza abstraction, not directly on concrete pizza classes.
+SO we will make piazza store depend on pizza abstraction and from pizza abstraction we will create NYStyleCheesePizza and ChicagoStyleCheesePizza and so on.
