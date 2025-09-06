@@ -1,0 +1,10 @@
+Problem Statement:
+it is like if i have a coffee with cost x and i can add any extras with cost y1, y2 .. and so on,
+ so it is like if i am decorating the coffee with extras
+
+Design Principles:
+1. Classes should be open for extension but closed for modification.
+
+---------------------------------------------------------------------------------------------------
+Decorator Pattern:
+in other words make the class do extra things without changing in the class itself ( extensions )
