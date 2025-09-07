@@ -24,3 +24,7 @@ Low level components: Concrete pizza classes like NYCheesePizza (specific implem
 Abstractions: The Pizza interface or abstract class, and possibly the factory interface
 PizzaStore should depend on the Pizza abstraction, not directly on concrete pizza classes.
 SO we will make piazza store depend on pizza abstraction and from pizza abstraction we will create NYStyleCheesePizza and ChicagoStyleCheesePizza and so on.
+---------------------------------------------------------------------------------------------------
+Abstract Factory Pattern: provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+We need to make every thing depend on abstraction ,so we will create the PizzaIngredientFactory abstraction so the process of creating the integrations of any Style like NYPizzaIngredientFactory is dependent on abstraction.
+and we will make all depend on the pizza abstraction.
