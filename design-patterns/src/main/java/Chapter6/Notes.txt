@@ -1,0 +1,17 @@
+Problem Statement:
+encapsulate the object creation logic
+
+Design Principles:
+1.
+
+---------------------------------------------------------------------------------------------------
+Client : is responsible for creating the command object.
+Command Object: consists of a set of actions on a receiver and the command contains an "execute()" method.
+the client uses the "setCommand()" method from the invoker to set the command object in the invoker.
+and after that when the invoker calls the "execute()" method to execute the command on the receiver.
+---------------------------------------------------------------------------------------------------
+Command Pattern: encapsulates a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations.
+---------------------------------------------------------------------------------------------------
+Macro Command: is a command that consists of multiple commands.
+Macro Command: is useful when you want to execute a sequence of commands as a single command.
+---------------------------------------------------------------------------------------------------
