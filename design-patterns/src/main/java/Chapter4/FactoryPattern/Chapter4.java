@@ -1,6 +1,5 @@
-package Chapter4;
+package Chapter4.FactoryPattern;
 
-import Chapter4.PizzaStyleStore.NYStylePizzaStore;
 import Chapter4.PizzaStyleStore.NYStylePizzaStore1;
 
 public class Chapter4 {

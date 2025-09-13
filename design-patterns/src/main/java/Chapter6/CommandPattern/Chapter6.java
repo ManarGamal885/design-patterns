@@ -1,4 +1,4 @@
-package Chapter6;
+package Chapter6.CommandPattern;
 
 import Chapter6.Commands.Command;
 import Chapter6.Commands.LightOffCommand;
