@@ -1,0 +1,10 @@
+Problem Statement:
+encapsulate the object creation logic
+
+Design Principles:
+
+---------------------------------------------------------------------------------------------------
+The Template Design Pattern : When i use a method to generalize a piece of algorithm and use it in the subclasses in other words ,
+the template method design pattern --> defines the steps of an algorithm and allows subclasses to provide specific implementations for some of the steps.
+---------------------------------------------------------------------------------------------------
+the HomeTheaterFacade class provides a simple interface to a complex subsystem involving multiple components like Amplifier, Tuner, DVD Player, and Projector.
