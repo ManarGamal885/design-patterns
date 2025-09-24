@@ -1,0 +1,14 @@
+Problem Statement:
+encapsulate the object creation logic
+
+Design Principles:
+" The least knowledge principle (Law of Demeter) states that a given object should assume as little as possible about the structure or properties of anything else (including its subcomponents)."
+1. Talk to interfaces, not implementations. ( which means always be careful to the number of classes it interact with and how it interacts with them)
+
+---------------------------------------------------------------------------------------------------
+Adaptive: it is like if u have a british plug and you want to use it in india so u need an adapter
+---------------------------------------------------------------------------------------------------
+Adapter Pattern: converts the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
+Facade: provides a simplified interface to a complex subsystem.
+---------------------------------------------------------------------------------------------------
+the HomeTheaterFacade class provides a simple interface to a complex subsystem involving multiple components like Amplifier, Tuner, DVD Player, and Projector.
