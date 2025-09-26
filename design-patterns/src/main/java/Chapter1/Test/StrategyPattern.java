@@ -1,4 +1,4 @@
-package Chapter1.StrategyPattern;
+package Chapter1.Test;
 
 import Chapter1.Behaviors.Flying.FlyNoWay;
 import Chapter1.Objects.Duck;

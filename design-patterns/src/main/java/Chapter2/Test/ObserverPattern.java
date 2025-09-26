@@ -1,4 +1,4 @@
-package Chapter2.ObserverPattern;
+package Chapter2.Test;
 
 import Chapter2.WeatherApp.Observers.CurrentConditionToDisplay;
 import Chapter2.WeatherApp.Subject.WeatherData;

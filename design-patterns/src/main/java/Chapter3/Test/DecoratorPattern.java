@@ -1,4 +1,4 @@
-package Chapter3.DecoratorPattern;
+package Chapter3.Test;
 
 import Chapter3.Beverages.Espresso;
 import Chapter3.Condiments.Mocha;

@@ -1,4 +1,4 @@
-package Chapter6.CommandPattern;
+package Chapter6.Test;
 
 import Chapter6.Commands.Command;
 import Chapter6.Commands.LightOffCommand;
@@ -8,7 +8,7 @@ import Chapter6.Invoker.RemoteControl;
 import Chapter6.Invoker.SimpleRemoteControl;
 import Chapter6.Receiver.Light;
 
-public class Chapter6 {
+public class CommandPattern {
     public static void main(String[] args) {
         // Create the receiver
         Light light = new Light("home");

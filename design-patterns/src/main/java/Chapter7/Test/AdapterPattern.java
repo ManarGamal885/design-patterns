@@ -1,4 +1,4 @@
-package Chapter7.AdapterPattern;
+package Chapter7.Test;
 
 import Chapter7.Adapters.TurkeyAdapter;
 import Chapter7.Birds.MallardDuck;
@@ -6,7 +6,7 @@ import Chapter7.Birds.WiledTurkey;
 import Chapter7.Interfaces.Adapter.Duck;
 import Chapter7.Interfaces.Adapter.Turkey;
 
-public class Chapter7 {
+public class AdapterPattern {
     public static void main(String[] args) {
         Duck duck = new MallardDuck();
         Turkey turkey = new WiledTurkey();

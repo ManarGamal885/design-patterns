@@ -1,0 +1,12 @@
+Problem Statement:
+encapsulate the object creation logic
+
+Design Principles:
+A class should have only one reason to change.
+---------------------------------------------------------------------------------------------------
+The Iterator Design Pattern: provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+The Composite Design Pattern: allows you to compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
+---------------------------------------------------------------------------------------------------
+the HomeTheaterFacade class provides a simple interface to a complex subsystem involving multiple components like Amplifier, Tuner, DVD Player, and Projector.
+The composition design pattern allows us to build structures of objects in form of trees that contain both individual objects and compositions of objects.
+And using a composite structure we can apply the same operations on both individual objects and compositions of objects.
