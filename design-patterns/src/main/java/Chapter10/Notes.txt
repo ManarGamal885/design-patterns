@@ -1,0 +1,3 @@
+Problem Statement:
+Controlling the states of the system while it is changing and a change request comes in.
+Design Principles:
