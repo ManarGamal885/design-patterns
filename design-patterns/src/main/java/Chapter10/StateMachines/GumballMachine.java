@@ -6,19 +6,21 @@ public class GumballMachine {
     final static int NO_QUARTER = 1;
     final static int HAS_QUARTER = 2;
     final static int SOLD = 3;
-    int state = SOLD_OUT; // Initial state of the gumball machine
-    int count = 0; // Number of gumballs in the machine
 
+    int state = SOLD_OUT; // Initial state of the gumball machine
+
+    int count = 0; // Number of gumballs in the machine
     // Constructor to initialize the gumball machine with a certain number of gumballs
+
     public GumballMachine(int count) {
         this.count = count;
         if( count > 0){
             state = NO_QUARTER;
         }
     }
-
     // Methods that represent actions on the gumball machine
     // 1 -  insertQuarter
+
     public void insertQuarter(){
         if(state == NO_QUARTER){
             System.out.println("Quarter inserted");
@@ -31,8 +33,8 @@ public class GumballMachine {
             System.out.println("You can't insert a quarter, the machine is sold out");
         }
     }
-
     // 2 - ejectQuarter
+
     public void ejectQuarter(){
         if(state == NO_QUARTER){
             System.out.println("You haven't inserted a quarter");
@@ -45,8 +47,8 @@ public class GumballMachine {
             System.out.println("You can't eject, you haven't inserted a quarter yet");
         }
     }
-
     // 3 - turnCrank
+
     public void turnCrank(){
         if(state == SOLD){
             System.out.println("Turning twice doesn't get you another gumball!");
@@ -60,8 +62,8 @@ public class GumballMachine {
             dispense();
         }
     }
-
     // 4 - dispense
+
     public void dispense(){
         if (state == SOLD) {
             System.out.println("A gumball comes rolling out the slot");
