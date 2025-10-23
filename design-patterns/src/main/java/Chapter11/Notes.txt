@@ -1,0 +1,57 @@
+problem statement:
+in this chapter the client from chapter 10 want a monitor and the response and request of it to be through the network so,
+we will use a proxy.
+the proxy : is used to act as the remote service for the client so it is responsible for sending requests and
+receiving responses from the remote service.
+
+Diagrams:
+
+(1)
+---------         ---------          ----------
+| CLIENT | -----> | PROXY | ------> | SERVICE |
+---------         ---------          ----------
+
+(2)
+                         search for the service using                             should register in the rmi with
+                 the name of the service registered in the rmi               specific name the client use it to search
+-----------------        -----------------------------                           ---------------------------------        ------------------
+| CLIENT Object | -----> | CLIENT helper ( RMI STUB ) | =======================> | SERVICE helper (RMI SKELETON )| ------> | SERVICE Object |
+-----------------        -----------------------------                           ---------------------------------        ------------------
+
+***CLIENT helper ( RMI STUB ) act as our proxy.
+*** UnicastRemoteObject = Service Helper.
+*** MyRemoteImpl = Service Object.
+***
+
+
+
+
+
+
+-----------------------------------------------------------
+HOW TO IMPLEMENT THE REMOTE SERVICE
+STEP 1 : make a remote interface.
+STEP 2 : make the remote implementation.
+STEP 3 : run the rmi registry.
+STEP 4 : start the service.
+-----------------------------------------------------------
+- RMI (Remote Method Invocation )Registry:
+The RMI registry is a small program that helps Java programs talk to each other over a network.
+
+It’s like a helper service that keeps track of which remote objects are available — and where they are.
+You have two Java programs:
+
+🖥️ Server — has an object with some useful methods (for example, sayHello()).
+
+💻 Client — wants to use that object, but it’s on another computer.
+
+How can the client find it?
+
+👉 That’s where the RMI registry comes in.
+- The RMI registry is a small program that helps a client find the server object that contains the methods the client wants to use.
+
+- What is serialVersionUID?
+
+It’s a unique identifier for a Serializable class.
+
+Java uses it during serialization and deserialization to verify that the class definition matches between sender and receiver.

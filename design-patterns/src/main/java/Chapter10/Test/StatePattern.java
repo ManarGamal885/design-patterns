@@ -16,7 +16,8 @@ public class StatePattern {
 //        gumballMachine.insertQuarter();
 //        gumballMachine.turnCrank();
 
-        GumballMachine1 gumballMachine1 = new GumballMachine1(10);
+        // Empty location
+        GumballMachine1 gumballMachine1 = new GumballMachine1("",10);
         System.out.println(gumballMachine1);
 
         gumballMachine1.insertQuarter();
