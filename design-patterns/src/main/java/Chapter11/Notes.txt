@@ -55,3 +55,8 @@ How can the client find it?
 It’s a unique identifier for a Serializable class.
 
 Java uses it during serialization and deserialization to verify that the class definition matches between sender and receiver.
+-------------------------------------------------------------------------------------------------------------------------------
+Steps to implement the rmi system:
+1 - The abstraction that would be part of the stub on the client and server side - ( MyRemote )
+2 - Implement the service so it implements that abstraction ( MyRemoteImpl )
+3 - Implement the Client side.
