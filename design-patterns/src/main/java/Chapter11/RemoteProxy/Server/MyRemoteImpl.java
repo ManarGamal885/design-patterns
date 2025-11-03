@@ -1,7 +1,8 @@
-package Chapter11.ProxyEx.Service;
+package Chapter11.RemoteProxy.Server;
 
 import java.rmi.Naming;
 import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
 import java.rmi.server.UnicastRemoteObject;
 
 // UnicastRemoteObject is used to mark this service as a remote service
@@ -13,16 +14,19 @@ public class MyRemoteImpl extends UnicastRemoteObject implements MyRemote {
 
     @Override
     public String sayHello() throws RemoteException {
-        return " Server says ,, Hello ";
+        return "Server says: Hello";
     }
 
-    // Now we will register the service into the rmi so the client ( proxy can call it from the rmi using this name ).
     public static void main(String[] args) {
         try {
+            // Start registry programmatically on port 1099
+            LocateRegistry.createRegistry(1099);
             MyRemote service = new MyRemoteImpl();
             Naming.rebind("RemoteHello", service);
-        }catch (Exception e){
+            System.out.println("✅ Server ready");
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
 }

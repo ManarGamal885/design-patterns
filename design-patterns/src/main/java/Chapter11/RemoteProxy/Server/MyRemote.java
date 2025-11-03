@@ -1,4 +1,4 @@
-package Chapter11.ProxyEx.Service;
+package Chapter11.RemoteProxy.Server;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
