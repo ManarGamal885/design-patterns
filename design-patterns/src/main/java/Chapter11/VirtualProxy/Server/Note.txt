@@ -1,0 +1,3 @@
+IN THE VIRTUAL PROXY:
+Everything — the proxy and the real object — runs on the client side.
+There is no separate server program or RMI registry involved at all.

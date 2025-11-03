@@ -23,11 +23,6 @@ Diagrams:
 *** MyRemoteImpl = Service Object.
 ***
 
-
-
-
-
-
 -----------------------------------------------------------
 HOW TO IMPLEMENT THE REMOTE SERVICE
 STEP 1 : make a remote interface.
@@ -60,3 +55,15 @@ Steps to implement the rmi system:
 1 - The abstraction that would be part of the stub on the client and server side - ( MyRemote )
 2 - Implement the service so it implements that abstraction ( MyRemoteImpl )
 3 - Implement the Client side.
+--------------------------------------------------------------------------------------------------------------------------------
+Proxy Pattern : Provides a placeholder for another object to control access to it.
+Virtual Proxy : is a type of Proxy Design Pattern that acts as a stand-in (placeholder) for a real,
+resource-heavy object — like an image, a video, or data fetched from a server and it controls the access to the object.
+
+* A remote proxy controls access to a remote
+object.
+* A virtual proxy controls access to a resource that is expensive
+to create.( y3ni maslan fl mesal da el imageProxy hifda bi show " loading l7ad ma el image tege" so it controls access to the image.)
+* A protection proxy controls access to a resource based on
+access rights.
+----------------------------------------------------------------------------------------------------------------------------------
